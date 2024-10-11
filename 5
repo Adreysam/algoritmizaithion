@@ -1,0 +1,36 @@
+age = int(input())     #ЗАДАНИЕ 1
+if age < 18:
+    print("Вы несовершеннолетний")
+elif age > 18 and age <65:
+    print("Вы трудоспособный человек")
+elif age >= 65:
+    print("Вы пенсионер")
+
+price = int(input())   #ЗАДАНИЕ 2
+if price < 1000:
+    print("Скидки нет")
+elif price < 1000 and price >= 5000:
+    print("Ваша скидка 5%")
+elif price > 5000:
+    print("Ваша скидка 10%")
+
+a = int(input("введите число:"))   #ЗАДАНИЕ 3
+b = int(input("введите второе число"))
+c = input("выберете операцию +, -, *, /:")
+if c == "+":
+    print(a+b)
+elif c == "-":
+    print(a-b)
+elif c == "*":
+    print(a*b)
+elif c == "/":
+    print(a/b)
+else:
+    print("Неверная операция")
+
+a = int(input())    #ЗАДАНИЕ 5
+x = 18452
+if a != x:
+  print("Доступ запрещен")
+else:
+  print("Доступ разрешен")
