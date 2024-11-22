@@ -26,3 +26,10 @@ def triangle_type(side1: float, side2: float, side3: float):
             print("Равнобедренный треугольник")
         else: 
             print("Разносторонний треугольник")
+    else: 
+        print("Некорректные стороны. Невозможно построить треугольник.")
+triangle_type(3, 3, 3)
+triangle_type(5, 5, 8)
+triangle_type(3, 4, 5)
+triangle_type(1, 2, 3)
+
