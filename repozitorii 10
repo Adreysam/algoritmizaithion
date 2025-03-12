@@ -22,9 +22,9 @@ minecraft = GameLauncher("Minecraft", r"C:\Games\Minecraft\MinecraftLauncher.exe
 gta5 = GameLauncher("GTA V", r"D:\Rockstar Games\GTA V\GTA5.exe")
 genshin = GameLauncher("Genshin Impact", r"C:\Games\Genshin Impact\GenshinImpact.exe")
 
-minecraft.run()  # Игра Minecraft успешно запущена...
-gta5.run()       # Игра GTA V успешно запущена...
-genshin.run()    # Ошибка: Игра Genshin Impact не запущена...
+minecraft.run() 
+gta5.run()      
+genshin.run()    
 # Задание 2
 class File:
     def __init__(self, filename, size):
