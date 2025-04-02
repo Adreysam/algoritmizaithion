@@ -130,3 +130,40 @@ music_files = [MP3File(), WAVFile(), FLACFile()]
 
 play_music(music_files)
         
+#Задание 5
+
+from abc import ABC, abstractmethod
+
+class Vehicle(ABC):
+    @abstractmethod
+    def move(self):
+        pass
+
+    @abstractmethod
+    def fuel_type(self):
+        pass
+
+class Car(Vehicle):
+    def move(self):
+        return "Автомобиль едет по дороге"
+
+    def fuel_type(self):
+        return "Бензин"
+
+class Boat(Vehicle):
+    def move(self):
+        return"Лодка плывет по воде"
+
+    def fuel_type(self):
+        return "Дизель"
+
+def test_transport(vehicles):
+        for vehicle in vehicles:
+            print(vehicle.move())
+            print(f"Тип топлива: {vehicle.fuel_type()}\n")
+
+if __name__ == "__main__":
+    car = Car()
+    boat = Boat()
+
+    test_transport([car, boat])
