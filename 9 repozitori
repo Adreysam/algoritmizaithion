@@ -1,5 +1,3 @@
-# Задание 1
-pers_1 = Create_Personage("Игорь", "Боец", 99, 15)
 class Create_Personage:
     def __init__(self, name_pers, class_pers, hp_pers, damage_pers):
         self.name_pers = name_pers
@@ -27,7 +25,13 @@ class Create_Personage:
     def start_the_battle(self):
         print(f"Персонаж {self.name_pers} хочет начать сражаться!")
         print(f"Его показатели: Жизни: {self.hp_pers} и урон: {self.damage_pers}")
-
+pers_1 = Create_Personage("Игорь", "Боец", 99, 15)
+pers_1.print_info()  # Выводим начальные показатели
+pers_1.go_on_a_trip()  # Отправляем в путешествие
+pers_1.go_back()  # Возвращаем назад
+pers_1.start_training()  # Начинаем тренировку. Она даст +5 к урону и +3 к жизням
+pers_1.print_info()  # Выводим показатели после тренировки
+pers_1.start_the_battle()  # Начинаем битву
 # Задание 2
 class Room:
     def __init__(self, name, area=None):
